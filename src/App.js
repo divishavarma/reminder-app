@@ -7,7 +7,7 @@ function App() {
   const [ reminderMsg, setReminderMsg ] = useState("");
   const [ remindAt, setReminderAt ] = useState();
   const addReminder = () => {
-    
+
   }
   return (
     <div className="App">
@@ -26,6 +26,15 @@ function App() {
             yearPlaceholder="YYYY"
           />
           <div className = "button" onClick = {addReminder}>Add Reminder</div>
+        </div>
+
+        <div className="homepage_body">
+          <div className="reminder_card">
+            <h2>Reminder Note</h2>
+            <h3>Remind Me at:</h3>
+            <p>26/05/2021 @ 2AM</p>
+            <div className="button">Delete</div>
+          </div>
         </div>
       </div>
     </div>
